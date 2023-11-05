@@ -1,0 +1,931 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E5DFD4;
+}
+
+body {
+    background-color: #EAEAE4;
+}
+
+/* トップ */
+.top {
+    padding: 4.166% 4.166% 0 4.166%;
+    color: #243528;
+    position: relative;
+}
+
+#top_thumbnail {
+    padding-top: 60px;
+}
+
+.background-img_1 {
+    width: 68.055%;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -110px;
+    left: 0;
+    z-index: -10;
+}
+
+.background-img_2 {
+    width: 32%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.background-img_3 {
+    width: 24%;
+    position: absolute;
+    top: 580px;
+    left: 0;
+    z-index: -10;
+}
+
+.top h1 {
+    margin-top: 18.055%;
+    padding-bottom: 17.5%;
+}
+
+.top_text {
+    z-index: 100;
+    width: 45.138%;
+    font-family: 'Noto Sans JP';
+    font-size: 18px;
+    letter-spacing: .09em;
+    line-height: 200%;
+    color: #243528;
+}
+
+.wrap2 {
+    background-color: #4E634A;
+    height: 50vh;
+}
+
+/* .midnightInner .green p {
+    color: #E5DFD4;
+} */
+
+header {
+    display: grid;
+    grid-template-columns:138px 1fr ;
+    align-items: center;
+    padding: 60px 60px 0 60px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: #243528;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.header_logo {
+    width: 20%;
+}
+
+header ul {
+    list-style: none;
+    justify-content: flex-end;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 14px;
+}
+
+.pc-nav ul {
+    display: flex;
+}
+
+.pc-nav ul li {
+    margin-left: 7.222%;
+    line-height: 150%;
+}
+
+.menu_a {
+    color: #243528;
+}
+
+h1{
+    font-family: 'NewYork',serif;
+    font-size: 120px;
+    line-height: 146px;
+    font-weight: 400;
+}
+
+.nav_hover {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav_h_top {
+    background-color: #EC741E;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.nav_top:hover ~ .nav_h_top{
+    background-color: #EC741E;
+    border-radius: 50%;
+    visibility: visible;
+    opacity: 1;
+    width: 38px;
+    margin-left: 122px;
+    margin-right: 48px;
+    transition: .3s;
+}
+
+.sp-nav {
+    display: none;
+}
+
+h2 {
+    font-family: 'NewYork',serif;
+    font-size: 86px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #243528;
+}
+
+/* Works紹介 */
+#works {
+    background-color: #4E634A;
+    color: #E5DFD4;
+    padding: 4.166%;
+    position: relative;
+}
+
+.background-flower {
+    width: 68%;
+    position: absolute;
+    bottom: -3.277%;
+    left: -180px;
+    z-index: 2;
+}
+
+.works h1 {
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    margin-left: -4.1666%;
+    margin-top: -6.3%;
+    position: absolute;
+    line-height: 74%;
+    font-size: 500%;
+}
+
+.works_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2.777% 2.083%;
+    margin-top: 4.166%;
+    padding-bottom: 4.166%;
+    z-index: 12;
+}
+
+.work_detail_upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art_01 {
+    grid-column: 3;
+}
+
+.art_02 {
+    grid-column: 4;
+}
+
+.art_03 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.art_04 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.art_05 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.art_06 {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.art_07 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+.work_art {
+    border-top: 1px solid #E5DFD4;
+    text-shadow: 0 2px 1px rgba(62, 80, 58, .5);
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.work_details {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: .04em;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.work_art img {
+    width: 100%;
+} 
+
+.work_date {
+    text-align: end;
+}
+
+.work_title {
+    font-size: 20px;
+    margin-bottom: 2.586%;
+    letter-spacing: .04em;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+/* プロフィール */
+#profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4.166% 0 6.25% 4.166%;
+    font-family:'Alegreya Sans SC', sans-serif;
+    line-height: 150%;
+    letter-spacing: .04em;
+    color: #243528;
+    background-color:  #EAEAE4;
+}
+
+.profile_logo-text {
+    display: grid;
+    grid-template-rows: 1.92fr 1fr 1.48fr;
+    gap: 8.472%;
+}
+
+.profile_logo {
+    width: 50%;
+}
+
+.profile_logo_sp {
+    display: none;
+}
+
+.profile_img {
+    width: 100%;
+}
+
+.profile_age {
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile_name {
+    font-family: 'NewYork';
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 56px;
+    margin-bottom: 1.111%;
+}
+
+.profile_career {
+    font-size: 14px;
+}
+
+.career_list {
+    display: flex;
+    margin-bottom: 1.111%;
+}
+
+.career_date {
+    margin-right: 24px;
+}
+
+/* スキル */
+.skill {
+    color: #243528;
+    font-family:'Alegreya Sans SC', sans-serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    z-index: 23;
+}
+.skill_design {
+    grid-column: 2;
+    background-color: #E5DFD4;
+    padding-top: 9.445%;
+}
+
+.skill_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11.112%;
+}
+
+.skill_title-des {
+    margin-left: 3.777%;
+    margin-right: 8.092%;
+}
+
+.skill_line {
+    width: 100%;
+    border-top: 1px solid #4E634A;
+}
+
+.skill_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.skill_list p {
+    padding-top: 40.28%;
+    padding-bottom: 40.28%;
+    text-align: center;
+    background-color: rgba(78, 99, 74, .4);
+}
+
+.photoshop {
+    border-radius: 55% 55% 0 0;
+}
+
+.skill_list .figma {
+    background-color: rgba(78, 99, 74, 1);
+    color: #E5DFD4;
+}
+
+.illustrator{
+    border-radius: 160px 0 0 0;
+}
+
+.blender {
+    border-radius: 0 0 160px 0;
+}
+
+.principle {
+    border-radius: 50%;
+}
+
+.skill_developing {
+    grid-row: 2;
+    background-color: #E5DFD4;
+    padding-top: 9.445%;
+    z-index: 21;
+}
+
+.skill_list .HTML {
+    grid-column: 3;
+}
+
+.skill_title-dev {
+    margin-left: 8.092%;
+    margin-right: 3.777%;
+    text-align: right;
+}
+
+.HTML {
+    border-radius: 0 0 160px 0;
+}
+
+.Javascript {
+    border-radius: 110px 110px 0 0;
+}
+
+/* フッター */
+footer {
+    background-color: #EAEAE4;
+    height: 562px;
+    position: relative;
+}
+
+.footer_background {
+    background-color: #EFC1A0;
+    border-radius: 580px 580px 0 0;
+    width: 100%;
+    height: 154.7%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 20;
+}
+
+.background-img_4 {
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 23;
+}
+
+#footer_container {
+    position: absolute;
+    top: 286px;
+    right: 60px;
+    bottom: 96px;
+    left: 60px;
+    z-index: 22;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    font-family: 'NewYork';
+    font-size: 18px;
+    letter-spacing: .07em;
+}
+
+.SNS {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.SNS p {
+    margin-left: 48.576%;
+}
+
+/* SP */
+@media screen and (max-width:800px)  {
+    header {
+        padding: 4.166% 4.166% 0 4.166%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    h1{
+        font-family: 'NewYork',serif;
+        font-size: 58px;
+        line-height: 100%;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-family: 'NewYork',serif;
+        font-size: 86px;
+        line-height: 100%;
+        font-weight: 400;
+        color: #243528;
+    }
+    
+    .pc-nav {
+        display: none;
+    }
+
+    .sp-nav {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        width: 100%;
+        background: #EAEAE4;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        transform: translateY(-100%);
+     }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 44px;
+        height: 16px;
+        margin: 0 0 0 auto;
+    }
+
+
+    .hamburger span{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border-top: 1px solid #243528;
+        transform: translateY(-50%);
+    }
+
+    .hamburger::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        border-top: 1px solid #243528;
+     }
+    .hamburger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        border-top: 1px solid #243528;
+     }
+
+    /* トップ */
+    .background-img_1 {
+        width: 68.055%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+    
+     /*スマホメニュー*/
+   .sp-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
+
+ .sp-nav li {
+    margin: 0;
+    border-top: solid 1px #243528;
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+ }
+
+ .sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+ }
+
+ .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 10px 0;
+ }
+
+ .sp-nav .text-banner {
+    font-size: 22px;
+    font-family: 'NewYork',serif;
+    border-top: 1px solid #243528;
+   }  
+
+ /*-閉じるアイコンー*/
+ .sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+ }
+
+ .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 12%;
+    height: 2px;
+    border-top: 1px solid #243528;
+    transform: rotate( 45deg );
+ }
+
+ .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 12%;
+    height: 2px;
+    border-top: 1px solid #243528;
+    transform: rotate( -45deg );
+ }
+
+ .toggle {
+    transform: translateY( 0 );
+    opacity: 1;
+ }
+
+    
+    /* Works紹介 */
+    .top_text {
+        font-family: 'Noto Sans JP';
+        font-size: 14px;
+        letter-spacing: .09em;
+        line-height: 200%;
+        color: #243528;
+        margin-bottom: 120px;
+    }
+    
+    .works {
+        background-color: #4E634A;
+        color: #E5DFD4;
+        padding: 24px;
+    }
+    
+    .background-flower {
+        width: 90%;
+        position: absolute;
+        bottom: 14%;
+    }
+    
+    .works h1 {
+        font-size: 500%;
+    }
+    
+    .works_list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6,1fr);
+        gap:0;
+        margin-top: 4.166%;
+    }
+    
+    .art_01 {
+        grid-column: 2;
+    }
+    
+    .art_02 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .art_03 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .art_04 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .art_05 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .art_06 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .work_details {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    
+    .work_detail_upper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .work_title {
+        font-size: 14px;
+    }
+    
+    /* プロフィール */
+    #profile {
+        display: block;
+        padding: 9.304%;
+        font-family:'Alegreya Sans SC', sans-serif;
+        line-height: 150%;
+        letter-spacing: .04em;
+        color: #243528;
+        background-color:  #EAEAE4;
+        position: relative;
+    }
+    
+    .profile_logo-text {
+        display: block;
+        background-color: #EAEAE4;
+    }
+    
+    .profile_logo {
+        display: none;
+    }
+    
+    .profile_logo_sp {
+        display: block;
+        width: 64.267%;
+        position: absolute;
+        top: 9.699%;
+        left: 6.4%;
+        z-index: 11;
+    }
+
+    .profile_main {
+        background-color: #EAEAE4;
+        padding: 44.343% 0 0 0;
+        margin: 62.386% 0 0 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .profile_career {
+        width: 66.361%;
+        padding-left: 26.3%;
+    }
+
+    .img_contents{
+        position: absolute;
+        top: 3.72%;
+    }
+
+    .profile_img {
+        width: 75.5%;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        z-index:12;
+    }
+    
+    .profile_img-bg {
+        background-color: #E5DFD4;
+        width: 90.8vw;
+        aspect-ratio: 1 / 1.185;
+    }
+
+    .profile_age {
+        font-size: 18px;
+        text-align: right;
+    }
+    
+    .profile_name {
+        font-family: 'NewYork';
+        font-size: 32px;
+        margin-bottom: 4px;
+        width: 100%;
+    }
+    
+    .profile_name_kana {
+        font-size: 12px;
+    }
+
+    .profile_career {
+        font-size: 14px;
+    }
+    
+    .career_list {
+        display: flex;
+        margin-bottom: 4px;
+    }
+    
+    .career_date {
+        margin-right: 13.889%;
+    }
+    
+    /* スキル */
+    .skill {
+        color: #243528;
+        font-family:'Alegreya Sans SC', sans-serif;
+        font-size: 14px;
+        display: block;
+    }
+
+    .skill_design {
+        background-color: #A8AD9D;
+        padding-top: 0;
+    }
+    
+    .skill_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    .skill_title-des {
+        margin: 24px 30px 24px;
+    }
+    
+    .skill_line {
+        width: 100%;
+        border-top: 1px solid #4E634A;
+    }
+    
+    .skill_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    
+    .skill_list p {
+        padding-top: 40.28%;
+        padding-bottom: 40.28%;
+        text-align: center;
+        background-color: #E5DFD4;
+    }
+    
+    .skill_list .figma {
+        background-color: rgba(78, 99, 74, 1);
+        color: #E5DFD4;
+    }
+    
+    .blender {
+        grid-column: 2;
+    }
+    
+    .principle {
+        grid-column: 3;
+    }
+    
+    .skill_developing {
+        background-color: #E5DFD4;
+        padding-top: 0;
+    }
+
+    .skill_developing .skill_list p {
+        background-color: rgba(78, 99, 74, .4);
+    }
+    
+    .skill_title-dev {
+        margin: 24px 30px 24px;
+        text-align: right;
+    }
+    
+    .skill_list .HTML {
+        grid-column: 1;
+    }
+
+    .HTML {
+        border-radius: 0 0 160px 0;
+    }
+    
+    .Javascript {
+        border-radius: 110px 110px 0 0;
+    }
+    
+    /* フッター */
+    footer {
+        background-color: #EAEAE4;
+        height: 100%;
+    }
+    
+    .footer_background {
+        display: none;
+    }
+
+    #footer_container {
+        position: initial;
+        z-index: 22;
+        background-color: #EFC1A0;
+        padding: 190px 24px 80px 24px;
+    }
+
+    #footer_container h2 {
+        font-size: 32px;
+    }
+    
+    .contact {
+        display: block;
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    .background-img_4 {
+        width: 60%;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    
+
+    .SNS {
+        margin-top: 14.68%;
+    }
+    
+    .SNS p {
+        margin-left: 9.176%;
+    }
+
+}

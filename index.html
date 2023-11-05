@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+        <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+        <script type='text/javascript' src='./midnight.jquery.min.js'></script>
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+        </script>
+        <!-- スマホナビの表示・非表示 -->
+        <script>
+        $(function() {
+        const hum = $('.hamburger, .close')
+        const nav = $('.sp-nav')
+        hum.on('click', function(){
+            nav.toggleClass('toggle');
+        });
+        });
+        </script>
+    </head>
+
+    <body>
+        <div class="top">
+            <header>
+                <figure>
+                    <img class="header_logo" src="./asset/Logo_big.png" alt="logo">
+                </figure>
+                <nav class="pc-nav">
+                    <ul>
+                        <li><a class="menu_a" href="#top_thumbnail">Top</a></li>
+                        <li><a class="menu_a" href="#works">Works</a></li>
+                        <li><a class="menu_a" href="#profile">What I am</a></li>
+                        <li><a class="menu_a" href="#footer_container">Contact</a></li>
+                    </ul>
+                 </nav>
+                 <!-- <nav class="sp-nav">
+                    <div class="close"><span></span></div>
+                    <div class="text-banner">Hope you have fun! Hope you have fun!</div>
+                    <ul>
+                       <li><a href="#top_thumbnail">Top</a></li>
+                       <li><a href="#works">Works</a></li>
+                       <li><a href="#">Career</a></li>
+                       <li><a href="#">Contact</a></li>
+                    </ul>
+                 </nav>
+                 <div class="hamburger">
+                    <span></span>
+                 </div> -->
+                <!-- <nav class="pc_nav">
+                    <ul class="pc_ul">
+                        <li>
+                            <div class="nav_top">Top</div>
+                            <div class="nav_h_top"></div>
+                        </li>
+                        <li class="nav_works">Works</li>
+                        <li class="nav_what">What I am</li>
+                        <li class="nav_contact">Contact</li>
+                    </ul>
+                </nav> -->
+            </header>
+            <section id="top_thumbnail">
+                <figure>
+                    <img class="background-img_1" src="./asset/leaf_bg.png" alt="イメージ">
+                    <img class="background-img_2" src="./asset/flower1_bg.png" alt="イメージ">
+                    <img class="background-img_3" src="./asset/flower3_bg.png" alt="イメージ">
+                </figure>
+                <div class="top_container">
+                    <h1>Welcome<br>
+                        To<br>
+                        My Portfolio👋
+                    </h1>
+                    <!-- <div class="midnight">
+                        <div class="top_text"><p>ここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたいここにテキスト何か入れたい</p></div>
+                        <div class="wrap1" data-midnight="default">
+                        <div class="wrap2" data-midnight="green">
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+        <section id="works">
+            <figure>
+                <img class="background-flower" src="./asset/flower2_bg.png" alt="">
+            </figure>
+            <h1>Works</h1>
+            <div class="works_list">
+                <article class="work_art art_01"><a href="./works_sns.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Project</p>
+                            <p class="work_date">2022.09~2023.03</p>
+                        </div>
+                        <p class="work_type">Web service</p>
+                    </div>
+                    <p class="work_title">決済フローのUX/UI見直しとサービス内のデザイン改修</p>
+                    <figure>
+                        <img src="./asset/sns_thumbnail.png" alt="works img">
+                    </figure>
+                </a></article>
+               <article class="work_art art_02"><a href="./works_drawing.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Project</p>
+                            <p class="work_date">2023.04~2023.09</p>
+                        </div>
+                        <p class="work_type">Web App</p>
+                    </div>
+                    <p class="work_title">コミュニティ型のお絵描きサービスの新規立ち上げ</p>
+                    <figure>
+                        <img src="./asset/drawing_thumbnail.png" alt="works img">
+                    </figure>
+                </a></article>
+                <article class="work_art art_03"><a href="./works_label.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Project</p>
+                            <p class="work_date">2021.10~2022.02</p>
+                        </div>
+                        <p class="work_type">App</p>
+                    </div>
+                    <p class="work_title">10年改修されなかったラベルテープアプリのUX/UI改修</p>
+                    <img src="./asset/label_thumbnail.png" alt="works img">
+                </a></article>
+                <article class="work_art art_04"><a href="./works_career.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Proposal</p>
+                            <p class="work_date">2023.07</p>
+                        </div>
+                        <p class="work_type">Corporate site</p>
+                    </div>
+                    <p class="work_title">転職エージェントサービスのコーポレートサイトの改修</p>
+                    <figure>
+                        <img src="./asset/career_thumbnail.png" alt="works img">
+                    </figure>
+                </a></article>
+                <article class="work_art art_05"><a href="./works_insurance.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Proposal</p>
+                            <p class="work_date">2023.07</p>
+                        </div>
+                        <p class="work_type">Web service</p>
+                    </div>
+                    <p class="work_title">加入している保険のマイページの企画提案</p>
+                    <figure>
+                        <img src="./asset/insurance_thumbnail.png" alt="works img">
+                    </figure>
+                </article>
+                <article class="work_art art_06"><a href="./works_realestate.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Proposal</p>
+                            <p class="work_date">2023.05</p>
+                        </div>
+                        <p class="work_type">Web service</p>
+                    </div>
+                    <p class="work_title">不動産会社のサービスページの改修提案</p>
+                    <figure>
+                        <img src="./asset/realestate_thumbnail.png" alt="works img">
+                    </figure>
+                </article>
+                <!-- <article class="work_art art_07"><a href="./works_accessories.html">
+                    <div class="work_details">
+                        <div class="work_detail_upper">
+                            <p class="work_state">Proposal</p>
+                            <p class="work_date">2022.02</p>
+                        </div>
+                        <p class="work_type">Brand site</p>
+                    </div>
+                    <p class="work_title">アクセサリーブランドのコーポレートサイトのリニューアル提案</p>
+                    <figure>
+                        <img src="./asset/gar_thumbnail.png" alt="works img">
+                    </figure>
+                </article> -->
+            </div>
+        </section>
+        <section id="profile">
+            <div class="profile_logo-text">
+                <figure>
+                    <img class="profile_logo" src="./asset/Logo_big.png" alt="Logo">
+                    <img class="profile_logo_sp" src="./asset/logo_profile_sp.png" alt="">
+                </figure>
+                <div class="profile_main">
+                    <p class="profile_age">(26)</p>
+                    <p class="profile_name">Sakura Umeno</p>
+                    <p class="profile_name_kana">梅野 さくら</p>
+                </div>
+                <div class="profile_career">
+                    <div class="career_list">
+                        <p class="career_date">1997.04</p>
+                        <p>福岡県福岡市出身</p>
+                    </div>
+                    <div class="career_list">
+                        <p class="career_date">2015.04</p>
+                        <p>駒澤大学入学</p>
+                    </div>
+                    <div class="career_list">
+                        <p class="career_date">2020.03</p>
+                        <p>Management at Komazawa university</p>
+                    </div>
+                    <div class="career_list">
+                        <p class="career_date">2020.07</p>
+                        <p>UI/UX designer at Archeco.inc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_contents">
+                <div class="profile_img-bg"></div>
+                <figure>
+                    <img class="profile_img" src="./asset/profile_img.png" alt="プロフィール写真">
+                </figure>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="skill_design">
+                <div class="skill_title">
+                    <p class="skill_title-des">Design</p>
+                    <div class="skill_line"></div>
+                </div>
+                <div class="skill_list">
+                    <p class="photoshop">Photoshop</p>
+                    <p class="figma">Figma</p>
+                    <div class="polygon">
+                        <p class="illustrator">Illustrator</p>
+                    </div>
+                    <p class="blender">Blender</p>
+                    <p class="principle">Principle</p>
+                </div>
+            </div>
+            <div class="skill_developing">
+                <div class="skill_title">
+                    <div class="skill_line"></div>
+                    <p class="skill_title-dev">Cording</p>
+                </div>
+                <div class="skill_list">
+                    <!-- <p class="HTML">HTML</p> -->
+                    <p class="CSS">HTML</p>
+                    <p class="Javascript">CSS</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_background"></div>
+            <figure>
+                <img class="background-img_4" src="./asset/leaf2_bg.png" alt="イメージ">
+            </figure>
+            <div id="footer_container">
+                <h2>Get in touch</h2>
+                <div class="contact">
+                    <p class="address">nasubi414141@gmail.com</p>
+                    <!-- <div class="SNS">
+                        <p>instagram</p>
+                        <p>Dribbble</p>
+                        <p>Behance</p>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
